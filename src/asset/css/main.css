@@ -20,6 +20,8 @@ body {
 
 .bg-dark {
 	background-color: #12002b;
+	padding-top: 3rem;
+	min-height: 80vh;
 }
 
 .sr-only {
@@ -55,6 +57,11 @@ body {
 .main-nav-item {
 	text-decoration: none;
 	margin-right: 0.5rem;
+	display: flex;
+	align-items: center;
+}
+.main-nav-item i {
+	margin-right: 5px;
 }
 
 .main-nav-item:hover {
@@ -69,6 +76,9 @@ body {
 .main-nav-logo-image {
 	max-width: 100%;
 	width: 200px;
+}
+.nav-signin {
+	display: flex;
 }
 
 .hero {
@@ -171,7 +181,6 @@ body {
 	background-color: white;
 	width: 300px;
 	margin: 0 auto;
-	margin-top: 3rem;
 	padding: 2rem;
 }
 

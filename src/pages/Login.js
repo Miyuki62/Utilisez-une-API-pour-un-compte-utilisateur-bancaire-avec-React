@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setToken } from "../app/features/userSlice";
 import userService from "../app/services/userService";
-import { useForm } from "react-hook-form";
 
 function Login() {
 	const [email, setEmail] = useState("tony@stark.com");
@@ -11,7 +10,6 @@ function Login() {
 	const [loginError, setLoginError] = useState();
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
-	const { formState } = useForm({});
 
 	const onEmailChange = (e) => {
 		setEmail(e.target.value);
@@ -28,6 +26,7 @@ function Login() {
 			if (token) {
 				dispatch(setToken(token));
 				navigate("/profile");
+				console.log("pass");
 			}
 		} catch (e) {
 			console.log(e);
