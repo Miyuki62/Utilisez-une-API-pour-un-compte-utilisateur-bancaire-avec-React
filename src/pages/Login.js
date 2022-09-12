@@ -26,7 +26,6 @@ function Login() {
 			if (token) {
 				dispatch(setToken(token));
 				navigate("/profile");
-				console.log("pass");
 			}
 		} catch (e) {
 			console.log(e);
