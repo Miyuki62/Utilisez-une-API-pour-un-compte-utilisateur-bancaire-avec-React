@@ -1,4 +1,4 @@
-#Prerequisites
+# Prerequisites
 Backend API https://github.com/Miyuki62/Project-13-Bank-API
 # Getting Started with Create React App
 
